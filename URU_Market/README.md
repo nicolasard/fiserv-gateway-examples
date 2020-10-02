@@ -1,15 +1,15 @@
 ## IPG URUGUAY 
 
 ### Inquiery Order
-This is allow you to get the details of a transaction.
+This is allow you to get the details of a transaction.  
 
-Ex: IPG_InquiryOrder.xml
+Ex: IPG_InquiryOrder.xml  
 
 ### Recurrent Type Transaction
 
 This kind of transactions applies for subscriptions, when the cardholder is going to be charged regulary.
 
-:no_entry_sign: Please note that we only support recurrent type for *Sale* transactions and *without installments*. *We don't support PREAUTH in this type of transactions*
+:no_entry_sign: Please note that we only support recurrent type functions for **Sale** transactions and **without installments**. **We also don't support PREAUTH in recurrent transactions.**
 
 The first transaction needs to be taged with 
 
@@ -40,10 +40,10 @@ Please also note that every time we use this feature the following fields are ma
 </ns3:TransactionDetails>
 ```
 
-A full example can be found in the following files:
+A full example can be found in the following files:  
 
-Ex: IPG_PFAC_Sale_FIRST_transaction.xml
-Ex: IPG_PFAC_Sale_RECURRENT_transaction.xml
+Ex: IPG_PFAC_Sale_FIRST_transaction.xml  
+Ex: IPG_PFAC_Sale_RECURRENT_transaction.xml  
 
 
 ### PFAC (Payment Facilitator) Transactions
