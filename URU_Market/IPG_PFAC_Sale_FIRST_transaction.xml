@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <ns5:IPGApiOrderRequest xmlns:ns2="http://ipg-online.com/ipgapi/schemas/a1" xmlns:ns3="http://ipg-online.com/ipgapi/schemas/v1" xmlns:ns5="http://ipg-online.com/ipgapi/schemas/ipgapi">
+            <ns3:Transaction>
+                <ns3:CreditCardTxType>
+                    <ns3:StoreId>your-store-id</ns3:StoreId>
+                    <ns3:Type>sale</ns3:Type>
+                </ns3:CreditCardTxType>
+                <ns3:CreditCardData>
+                    <ns3:CardNumber>4539393950884198</ns3:CardNumber>
+                    <ns3:ExpMonth>06</ns3:ExpMonth>
+                    <ns3:ExpYear>21</ns3:ExpYear>
+                    <ns3:CardCodeValue>123</ns3:CardCodeValue>
+                </ns3:CreditCardData>
+                <ns3:recurringType>FIRST</ns3:recurringType>
+                <ns3:Payment>
+                    <ns3:ChargeTotal>100.00</ns3:ChargeTotal>
+                    <ns3:Currency>858</ns3:Currency>
+                </ns3:Payment>
+                <ns3:TransactionDetails>
+                    <ns3:AdditionalRequestParameters>
+                        <ns3:keyValuePair>
+                            <ns3:key>invoicePeriod</ns3:key>
+                            <ns3:value>06/21</ns3:value>
+                        </ns3:keyValuePair>
+                        <ns3:keyValuePair>
+                            <ns3:key>taxRefundIndicator</ns3:key>
+                            <ns3:value>URY_RETURNS_IVA_LAW_19210</ns3:value>
+                        </ns3:keyValuePair>
+                    </ns3:AdditionalRequestParameters>
+                    <ns3:OrderId>your-order-id</ns3:OrderId>
+                </ns3:TransactionDetails>
+            </ns3:Transaction>
+        </ns5:IPGApiOrderRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

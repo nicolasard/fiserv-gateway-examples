@@ -9,7 +9,7 @@ Ex: IPG_InquiryOrder.xml
 
 This kind of transactions applies for subscriptions, when the cardholder is going to be charged regulary.
 
-(!) Please note that we only support recurrent type for Sale transactions and without installments.
+:no_entry_sign: Please note that we only support recurrent type for *Sale* transactions and *without installments*. *We don't support PREAUTH in this type of transactions*
 
 The first transaction needs to be taged with 
 
@@ -20,7 +20,7 @@ The first transaction needs to be taged with
 The subsecuents ones with
 
 ```xml
-<ns3:recurringType>RECURRENT</ns3:recurringType>
+<ns3:recurringType>REPEAT</ns3:recurringType>
 ```
 
 Please also note that every time we use this feature the following fields are mandatory.
@@ -40,7 +40,7 @@ Please also note that every time we use this feature the following fields are ma
 </ns3:TransactionDetails>
 ```
 
-A full example can be found in the following links:
+A full example can be found in the following files:
 
 Ex: IPG_PFAC_Sale_FIRST_transaction.xml
 Ex: IPG_PFAC_Sale_RECURRENT_transaction.xml
