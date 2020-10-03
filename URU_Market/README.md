@@ -3,7 +3,7 @@
 ### Inquiery Order
 This is allow you to get the details of a transaction.  
 
-Ex: IPG_InquiryOrder.xml  
+Ex: [IPG_InquiryOrder.xml](IPG_InquiryOrder.xml)  
 
 ### Recurrent Type Transaction
 
@@ -29,10 +29,6 @@ Please also note that every time we use this feature the following fields are ma
 <ns3:TransactionDetails>
 	<ns3:AdditionalRequestParameters>
 		<ns3:keyValuePair>
-			<ns3:key>invoiceNumber</ns3:key>
-			<ns3:value>012345</ns3:value>
-		</ns3:keyValuePair
-		<ns3:keyValuePair>
 			<ns3:key>invoicePeriod</ns3:key>
 			<ns3:value>06/21</ns3:value>
 		</ns3:keyValuePair>
@@ -42,9 +38,8 @@ Please also note that every time we use this feature the following fields are ma
 
 A full example can be found in the following files:  
 
-Ex: IPG_PFAC_Sale_FIRST_transaction.xml  
-Ex: IPG_PFAC_Sale_RECURRENT_transaction.xml  
-
+Ex: [IPG_PFAC_Sale_FIRST_transaction.xml](./IPG_PFAC_Sale_FIRST_transaction.xml)  
+Ex: [IPG_PFAC_Sale_RECURRENT_transaction.xml](./IPG_PFAC_Sale_RECURRENT_transaction.xml)  
 
 ### PFAC (Payment Facilitator) Transactions
 
