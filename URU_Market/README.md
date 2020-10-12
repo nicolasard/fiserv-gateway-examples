@@ -27,6 +27,7 @@ Please also note that every time we use this feature the following fields are ma
 
 ```xml
 <ns3:TransactionDetails>
+	<ns3:InvoiceNumber>154323233473</ns3:InvoiceNumber>
 	<ns3:AdditionalRequestParameters>
 		<ns3:keyValuePair>
 			<ns3:key>invoicePeriod</ns3:key>
