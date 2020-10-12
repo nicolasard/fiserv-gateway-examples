@@ -20,6 +20,7 @@
                     <ns3:Currency>858</ns3:Currency>
                 </ns3:Payment>
                 <ns3:TransactionDetails>
+                    <ns3:InvoiceNumber>123456789012</ns3:InvoiceNumber>
                     <ns3:AdditionalRequestParameters>
                         <ns3:keyValuePair>
                             <ns3:key>invoicePeriod</ns3:key>
