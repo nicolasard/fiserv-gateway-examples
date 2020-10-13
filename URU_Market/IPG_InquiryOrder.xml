@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-<SOAP-ENV:Header/>
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header />
    <SOAP-ENV:Body>
-        <ns4:IPGApiActionRequest xmlns:ns2="http://ipg-online.com/ipgapi/schemas/a1" xmlns:ns3="http://ipg-online.com/ipgapi/schemas/v1" xmlns:ns4="http://ipg-online.com/ipgapi/schemas/ipgapi">
-            <ns2:Action>
-                <ns2:InquiryOrder>
-			<ns2:StoreId>5910101009</ns2:StoreId>
-			<ns2:OrderId>A-060a7ff0-bd7d-42d7-a714-528a6d351702</ns2:OrderId>
-                </ns2:InquiryOrder>
-            </ns2:Action>
-        </ns4:IPGApiActionRequest>
-    </SOAP-ENV:Body>
+      <ns4:IPGApiActionRequest xmlns:ns4="http://ipg-online.com/ipgapi/schemas/ipgapi" xmlns:ns2="http://ipg-online.com/ipgapi/schemas/a1" xmlns:ns3="http://ipg-online.com/ipgapi/schemas/v1">
+         <ns2:Action>
+            <ns2:InquiryOrder>
+               <ns2:StoreId>5910101009</ns2:StoreId>
+               <ns2:OrderId>A-060a7ff0-bd7d-42d7-a714-528a6d351702</ns2:OrderId>
+            </ns2:InquiryOrder>
+         </ns2:Action>
+      </ns4:IPGApiActionRequest>
+   </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
