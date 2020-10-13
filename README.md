@@ -1,7 +1,7 @@
 
 # Fiserv Internet Payment Gateway Examples
 
-This confluence page contains examples of the different transactions that are available. 
+This confluence page contains examples of the different transactions that are available using our API.
 
 For Argentina please check ./ARG_Market  
 For Brazil please check ./BRA_Market  
