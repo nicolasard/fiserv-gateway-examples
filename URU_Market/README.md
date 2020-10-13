@@ -66,6 +66,3 @@ Ex: IPG_PFAC_sale_preauth_transaction.xml
 </v1:SubMerchant>
 ```
 
-This kind of transactions 
-
-
