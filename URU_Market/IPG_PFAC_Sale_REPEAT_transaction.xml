@@ -20,7 +20,6 @@
                     <ns3:Currency>858</ns3:Currency>
                 </ns3:Payment>
                 <ns3:TransactionDetails>
-                    <ns3:InvoiceNumber>123456789013</ns3:InvoiceNumber>
                     <ns3:AdditionalRequestParameters>
                         <ns3:keyValuePair>
                             <ns3:key>invoicePeriod</ns3:key>
@@ -33,6 +32,9 @@
                     </ns3:AdditionalRequestParameters>
                     <ns3:OrderId>your-order-id</ns3:OrderId>
                 </ns3:TransactionDetails>
+                <ns3:Billing>
+                    <ns3:CustomerID>34384123</ns3:CustomerID>
+                </ns3:Billing>
             </ns3:Transaction>
         </ns5:IPGApiOrderRequest>
     </SOAP-ENV:Body>
