@@ -27,7 +27,6 @@ Please also note that every time we use this feature the following fields are ma
 
 ```xml
 <ns3:TransactionDetails>
-	<ns3:InvoiceNumber>123456789012</ns3:InvoiceNumber>
 	<ns3:AdditionalRequestParameters>
 		<ns3:keyValuePair>
 			<ns3:key>invoicePeriod</ns3:key>
@@ -35,6 +34,9 @@ Please also note that every time we use this feature the following fields are ma
 		</ns3:keyValuePair>
 	</ns3:AdditionalRequestParameters>
 </ns3:TransactionDetails>
+<ns3:Billing>
+	<ns3:CustomerID>34384123</ns3:CustomerID>
+</ns3:Billing>
 ```
 
 A full example can be found in the following files:  
