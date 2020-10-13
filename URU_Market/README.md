@@ -42,7 +42,7 @@ Please also note that every time we use this feature the following fields are ma
 A full example can be found in the following files:  
 
 Ex: [IPG_PFAC_Sale_FIRST_transaction.xml](./IPG_PFAC_Sale_FIRST_transaction.xml)  
-Ex: [IPG_PFAC_Sale_RECURRENT_transaction.xml](./IPG_PFAC_Sale_RECURRENT_transaction.xml)  
+Ex: [IPG_PFAC_Sale_REPEAT_transaction.xml](./IPG_PFAC_Sale_REPEAT_transaction.xml)  
 
 ### PFAC (Payment Facilitator) Transactions
 
