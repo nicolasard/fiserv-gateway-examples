@@ -1,5 +1,13 @@
 ## IPG URUGUAY 
 
+### Void-Refund logic
+|                                         | Cancel Pre-Auth (Not Captured) | Cancel Post-Auth  |
+| --------------------------------------- |:-------------:| :-----:|
+| Up to 02.00 Montevideo day of Post Auth | Not Possible | Send IPG "Void" Post Auth does not debit Cardholders A/C |
+| After 02.00 Montevideo day of Post Auth | Not Possible |   Send IPG "Return" up to 180 days Post Auth Debits Cardholders A/C
+
+A Return can be up to the value of the original transaction (i.e "Partial Refund")
+
 ### Inquiry Order
 This is allow you to get the details of a transaction.  
 
@@ -11,13 +19,13 @@ This kind of transactions applies for subscriptions, when the cardholder is goin
 
 :no_entry_sign: Please note that we only support recurrent type functions for **Sale** transactions and **without installments**. **We also don't support PREAUTH in recurrent transactions.**
 
-The first transaction needs to be taged with 
+The first transaction needs to be taged with...
 
 ```xml
 <ns3:recurringType>FIRST</ns3:recurringType>
 ```
 
-The subsecuents ones with
+The subsecuents ones with...
 
 ```xml
 <ns3:recurringType>REPEAT</ns3:recurringType>
