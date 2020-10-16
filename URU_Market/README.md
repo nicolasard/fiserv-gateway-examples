@@ -1,6 +1,6 @@
 ## IPG URUGUAY 
 
-### Void-Refund logic
+### 1.0 Void-Refund logic
 |                                         | Cancel Pre-Auth (Not Captured) | Cancel Post-Auth  |
 | --------------------------------------- |:-------------:| :-----:|
 | Up to 02.00 Montevideo day of Post Auth | Not Possible | Send IPG "Void" Post Auth does not debit Cardholders A/C |
@@ -8,12 +8,12 @@
 
 A Return can be up to the value of the original transaction (i.e "Partial Refund")
 
-### Inquiry Order
+### 2.0 Inquiry Order
 This is allow you to get the details of a transaction.  
 
 Ex: [IPG_InquiryOrder.xml](IPG_InquiryOrder.xml)  
 
-### Recurrent Type Transaction
+### 3.0 Recurrent Type Transaction
 
 This kind of transactions applies for subscriptions, when the cardholder is going to be charged regulary.
 
@@ -52,7 +52,7 @@ A full example can be found in the following files:
 Ex: [IPG_PFAC_Sale_FIRST_transaction.xml](./IPG_PFAC_Sale_FIRST_transaction.xml)  
 Ex: [IPG_PFAC_Sale_REPEAT_transaction.xml](./IPG_PFAC_Sale_REPEAT_transaction.xml)  
 
-### PFAC (Payment Facilitator) Transactions
+### 4.0 PFAC (Payment Facilitator) Transactions
 
 Ex: IPG_PFAC_sale_preauth_transaction.xml
 
