@@ -15,7 +15,7 @@ Ex: [IPG_InquiryOrder.xml](IPG_InquiryOrder.xml)
 
 ### 3.0 Recurrent Type Transaction
 
-This kind of transactions applies for subscriptions, when the cardholder is going to be charged regulary.
+A recurring transaction is one in which a cardholder authorizes a merchant to automatically charge his or her account number for the recurring or periodic delivery of goods or services. A typical recurring transaction might be an automatic bill pay for Internet or cable television services, a monthly newspaper subscription, or a health club membership.
 
 :no_entry_sign: Please note that we only support recurrent type functions for **Sale** transactions and **without installments**. **We also don't support PREAUTH in recurrent transactions.**
 
