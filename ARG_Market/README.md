@@ -48,7 +48,7 @@ Please also note that every time we use this feature the following fields are ma
 ```
 
 ### 4.0 Dynamic Merchant Name
-We currently don't support dynami merchant name feature in Argentina.
+We currently don't support dynamic merchant name feature in Argentina.
 
 ### 5.0 PFAC (Payment Facilitator) Transactions
 
