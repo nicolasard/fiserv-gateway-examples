@@ -1,6 +1,42 @@
 ## IPG ARGENTINA
 
-### 1.0 Void-Refund logic
+### 1.0 How to get the WSDL
+
+To get the wsdl you need to be authenticated using your basic auth credentials and the MTLS cert. After that you can get it. Please note that we might add new features to the WSDL, but we never changes definitions that are currently in use.
+
+To get the last WSDL and XSDs you can run the following shell script that uses curl.
+
+At the moment of writing this document this was the last [order.wsdl](./order.wsdl), [v1.xsd](v1.xsd) and [a1.xsd](a1.xsd).
+
+```sh
+#!/bin/sh
+
+echo "Making Curl call to the API service"
+
+#1) DATA NEEDED FOR THE WS CALL
+###################################################
+#Endpoint server certificate
+
+ServerCertificate="<your .pem>"
+
+#Private Key for merchant and the password for decrypt that private key
+PrivateKey="<your private ker .key file>"
+PrivateKeyPassword="<your private key password>"
+
+#Merchant user and password
+UserID="<basic auth user>"
+UserIDPassword="<basic auth password>"
+
+
+curl -v  -H "Content-Type: text/xml" -k  --cert $ServerCertificate --key $PrivateKey --pass $PrivateKeyPassword -u $UserID:$UserIDPassword --url https://test.ipg-online.com/ipgapi/services/order.wsdl --trace-ascii "trace.log" -o "order.wsdl"
+
+curl -v  -H "Content-Type: text/xml" -k  --cert $ServerCertificate --key $PrivateKey --pass $PrivateKeyPassword -u $UserID:$UserIDPassword --url https://test.ipg-online.com/ipgapi/services/../schemas/v1.xsd --trace-ascii "trace.log" -o "v1.xsd"
+
+curl -v  -H "Content-Type: text/xml" -k  --cert $ServerCertificate --key $PrivateKey --pass $PrivateKeyPassword -u $UserID:$UserIDPassword --url https://test.ipg-online.com/ipgapi/services/../schemas/a1.xsd --trace-ascii "trace.log" -o "a1.xsd"
+```
+
+
+### 2.0 Void-Refund logic
 |                                         | Cancel Pre-Auth (Not Captured) | Cancel Post-Auth  |
 | --------------------------------------- |:-------------:| :-----:|
 | Up to 02.00 Buenos Aires day of Post Auth | Not Possible | Send IPG "Void" Post Auth does not debit Cardholders A/C |
@@ -8,12 +44,12 @@
 
 A Return can be up to the value of the original transaction (i.e "Partial Refund")
 
-### 2.0 Inquiry Order
+### 3.0 Inquiry Order
 This is allow you to get the details of a transaction.  
 
 Ex: [IPG_InquiryOrder.xml](IPG_InquiryOrder.xml)  
 
-### 3.0 Recurrent Type Transaction
+### 4.0 Recurrent Type Transaction
 
 A recurring transaction is one in which a cardholder authorizes a merchant to automatically charge his or her account number for the recurring or periodic delivery of goods or services. A typical recurring transaction might be an automatic bill pay for Internet or cable television services, a monthly newspaper subscription, or a health club membership.
 
@@ -47,10 +83,11 @@ Please also note that every time we use this feature the following fields are ma
 </ns3:Billing>
 ```
 
-### 4.0 Dynamic Merchant Name
+
+### 5.0 Dynamic Merchant Name
 We currently don't support dynamic merchant name feature in Argentina.
 
-### 5.0 PFAC (Payment Facilitator) Transactions
+### 6.0 PFAC (Payment Facilitator) Transactions
 
 Ex: IPG_PFAC_sale_preauth_transaction.xml
 
