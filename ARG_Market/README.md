@@ -2,7 +2,7 @@
 
 ### 1.0 How to get the WSDL
 
-To get the wsdl you need to be authenticated using your basic auth credentials and the MTLS cert. After that you can get it. Please note that we might add new features to the WSDL, but we never changes definitions that are currently in use.
+To get the wsdl you need to be authenticated using your basic auth credentials and the MTLS cert. After that you can get it from the url https://test.ipg-online.com/ipgapi/services/order.wsdl (Note that in this case we are using the test domain, in prod the domain will be other). Please note that we might add new features to the WSDL, but we never changes definitions that are currently in use.
 
 To get the last WSDL and XSDs you can run the following shell script that uses curl.
 
