@@ -55,6 +55,20 @@ A recurring transaction is one in which a cardholder authorizes a merchant to au
 
 :no_entry_sign: Please note that we only support recurrent type functions for **Sale** transactions and **without installments**. **We also don't support PREAUTH in recurrent transactions.**
 
+Please also note that recurrent payments it's supported just for certain brands, check the following table:
+
+| Brand | |
+| ----- :| :-----:|
+| VISA | Supported |
+| Mastercard | Supported |
+| CMR / Falabella | Supported |
+| Argencard | Supported |
+| Diners/Discover | Supported |
+| Amex | NOT Supported |
+| Naranja | NOT Supported |
+| Maestro | NOT Supported |
+
+
 The first transaction needs to be taged with...
 
 ```xml
