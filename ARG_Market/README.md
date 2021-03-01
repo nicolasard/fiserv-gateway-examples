@@ -40,7 +40,7 @@ curl -v  -H "Content-Type: text/xml" -k  --cert $ServerCertificate --key $Privat
 |                                         | Cancel Pre-Auth (Not Captured) | Cancel Post-Auth  |
 | --------------------------------------- |:-------------:| :-----:|
 | Up to 02.00 Buenos Aires day of Post Auth | Not Possible | Send IPG "Void" Post Auth does not debit Cardholders A/C |
-| After 02.00  Buenos Aires day of Post Auth | Not Possible |   Send IPG "Return" up to 180 days Post Auth Debits Cardholders A/C
+| After 02.00  Buenos Aires day of Post Auth | Not Possible |   Send IPG "Return" up to 180 days Post Auth Debits Cardholders A/C |
 
 A Return can be up to the value of the original transaction (i.e "Partial Refund")
 
@@ -57,9 +57,9 @@ A recurring transaction is one in which a cardholder authorizes a merchant to au
 
 Please also note that recurrent payments it's supported just for certain brands, check the following table:
 
-| Brand | |
-| ----- :| :-----:|
-| VISA | Supported |
+| Brand   |        | 
+| ----| ----- | 
+| VISA    | Supported | 
 | Mastercard | Supported |
 | CMR / Falabella | Supported |
 | Argencard | Supported |
@@ -67,7 +67,6 @@ Please also note that recurrent payments it's supported just for certain brands,
 | Amex | NOT Supported |
 | Naranja | NOT Supported |
 | Maestro | NOT Supported |
-
 
 The first transaction needs to be taged with...
 
